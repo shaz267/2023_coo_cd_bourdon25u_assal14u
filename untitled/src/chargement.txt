@@ -10,3 +10,5 @@ elle va ensuite rentrer dans une boucle ou elle appelera successivement la méth
 ainsi que la méthode ajouterPiste sur la classe CD.
 
 Après que chargerCD retourne un CD la classe ChargeurMagasin appele une méthode ajouteCD sur un objet Magasin qui ajoute un CD au magasin.
+
+Enfin la méthode chargerMagasin va retourner nouveau objet Magasin contenant les CDs
