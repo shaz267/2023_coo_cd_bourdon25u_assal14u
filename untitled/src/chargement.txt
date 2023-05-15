@@ -1,0 +1,1 @@
+La méthode main appelle le constructeur de chargeurMagasin, ensuite elle appelle 
