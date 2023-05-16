@@ -1,0 +1,14 @@
+La méthode main appelle le constructeur de chargeurMagasin avec en paramètre le texte du chemin d'accès du répertoire,
+ensuite elle appelle la méthode chargerMagasin sur l'objet ChargeurMagasin créer précédemment, cette méthode retourne un magasin.
+
+La classe ChargeurMagasin va quand à elle créer un objet Magasin avec son constructeur qui prend en paramètre le nom du fichier à charger,
+ainsi que de créer un objet ChargeurCD avec son constructeur, 
+et ensuite appeller la méthode chargerCD sur un objet ChargeurCD, cette méthode retourne un CD.
+
+La classe ChargeurCD va créer un objet CD avec en paramètres l'artiste ainsi que le nom du CD, 
+elle va ensuite rentrer dans une boucle ou elle appelera successivement la méthode extrairePiste qui retournera un objet contenant le descriptif de la piste, 
+ainsi que la méthode ajouterPiste sur la classe CD.
+
+Après que chargerCD retourne un CD la classe ChargeurMagasin appele une méthode ajouteCD sur un objet Magasin qui ajoute un CD au magasin.
+
+Enfin la méthode chargerMagasin va retourner nouveau objet Magasin contenant les CDs
