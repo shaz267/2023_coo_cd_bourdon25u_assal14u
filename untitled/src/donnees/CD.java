@@ -97,5 +97,23 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	/**
+	 * Méthode qui permet de savoir si ce cd est plus petit que l'élément en paramètre
+	 * @param cd
+	 * @return true si this est plus petit
+	 */
+	public boolean plusPetitAlbum(CD cd){
+
+		return this.nomCD.compareTo(cd.nomCD) < 0;
+	}
+
+	/**
+	 * Méthode qui permet de savoir si le nom de ce cd est plus petit que l'élément en paramètre
+	 * @param cd
+	 * @return true si this est plus petit
+	 */
+	public boolean plusPetitArtiste(CD cd){
+
+		return this.nomArtiste.compareTo(cd.nomArtiste) < 0;
+	}
 }

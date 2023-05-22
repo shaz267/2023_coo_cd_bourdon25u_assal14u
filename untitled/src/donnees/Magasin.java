@@ -68,6 +68,38 @@ public class Magasin {
 		return(res);
 	}
 
-	// TODO  ajouter une methode de tri
+	public void trierAlbum(){
+
+		for (int i = 0; i < listeCds.size(); i++){
+
+			for (int j = i; j < listeCds.size(); j++){
+
+				if (!listeCds.get(i).plusPetitAlbum(listeCds.get(j))){
+
+					CD uncd = listeCds.get(j);
+
+					listeCds.remove(j);
+					listeCds.add(i, uncd);
+				}
+			}
+		}
+	}
+
+	public void trierArtiste(){
+
+		for (int i = 0; i < listeCds.size(); i++){
+
+			for (int j = i; j < listeCds.size(); j++){
+
+				if (!listeCds.get(i).plusPetitArtiste(listeCds.get(j))){
+
+					CD uncd = listeCds.get(j);
+
+					listeCds.remove(j);
+					listeCds.add(i, uncd);
+				}
+			}
+		}
+	}
 
 }
