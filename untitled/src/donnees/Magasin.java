@@ -56,7 +56,7 @@ public class Magasin {
 	}
 	
 	/**
-	 * permet d'acceder à un CD
+	 * permet d'acceder a un CD
 	 * 
 	 * @return le cd a l'indice i ou null si indice est non valide
 	 */
@@ -92,6 +92,23 @@ public class Magasin {
 			for (int j = i; j < listeCds.size(); j++){
 
 				if (!listeCds.get(i).plusPetitArtiste(listeCds.get(j))){
+
+					CD uncd = listeCds.get(j);
+
+					listeCds.remove(j);
+					listeCds.add(i, uncd);
+				}
+			}
+		}
+	}
+
+	public void trier(ComparateurCd compaCD){
+
+		for (int i = 0; i < listeCds.size(); i++){
+
+			for (int j = i; j < listeCds.size(); j++){
+
+				if (!compaCD.etreAvant(listeCds.get(i), listeCds.get(j))){
 
 					CD uncd = listeCds.get(j);
 

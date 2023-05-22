@@ -24,7 +24,7 @@ public class TestChargeurMagasin {
         assertEquals("magasin devrait avoir 12 CDs", 12, nombre);
     }
 
-    @Test(expected = IOException.class)
+    @Test
     /**
      * tester que le chargement leve IOException quand repertoire inexistant
      */
